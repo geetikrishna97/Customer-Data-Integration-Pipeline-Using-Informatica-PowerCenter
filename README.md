@@ -61,7 +61,7 @@ When everything is configured correctly, the data present in Customers_info will
 
 - SELECT count(*) FROM etl_tgt.Customers_info_tgt ;
 - go
-
+'''
 ## 📈 Business Impact
 - Unified customer data from multiple systems
 - Improved data quality and consistency
