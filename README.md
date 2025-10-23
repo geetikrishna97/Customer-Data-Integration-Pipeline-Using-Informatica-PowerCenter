@@ -76,5 +76,6 @@ go
 
 
 
-## 🧪 Sample Data
-SQL script for mock customer data: [`sql-sample-data.sql`](scripts/sql-sample-data.sql)
+## 🧪 Screenshots
+
+![SourceQualifier:Customers_info] (SQ_customers_info.png)
