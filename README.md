@@ -37,16 +37,17 @@ Once the workflow is built,  start it by right-clicking and selecting “Start W
 When everything is configured correctly, the data present in Customers_info will be extracted by the Source Qualifier, and loaded into Customers_info_tgt. The Workflow Monitor confirms the success of this operation.
 
 ## SQL Query used
-- create database InformaticaRepo
+```sql
+- create database InformaticaRepo;
+
 - create schema etl authorization dbo;
 - go
+
 - USE InformaticaRepo;
 - go
-- CREATE TABLE etl.Customers_info (
-    CustomerID INT PRIMARY KEY,
-    CustomerName NVARCHAR(100),
-    Country NVARCHAR(50)
-);
+
+- CREATE TABLE etl.Customers_info ( CustomerID INT PRIMARY KEY, CustomerName NVARCHAR(100),Country NVARCHAR(50));
+
 - BULK INSERT etl.Customers_info FROM 'C:\Users\geeti\Downloads\customers_info.csv' WITH ( FIRSTROW = 1);
 - go
 - select * from etl.Customers_info;
